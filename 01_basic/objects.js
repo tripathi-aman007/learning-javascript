@@ -69,5 +69,15 @@ const newUser = {
 // console.log(Object.values(newUser)); 
 // returns the new object inside which it combines all the entry as a key value pair in new object.
 // console.log(Object.entries(newUser));
+// console.log(Object.hasOwnProperty("name"));
 
-console.log(Object.hasOwnProperty("name"));
+// DESTRUCTURE THE OBJECT.
+const courseDetails = {
+    courseName : "Data Analytics",
+    coursePrice : 999,
+    courseInstructor : "Aman Tripathi",
+};
+
+// desturcturing
+const {courseName : name, coursePrice : Price} = courseDetails;
+console.log(`Course Name: ${name} and its Price is: ${Price}`);
